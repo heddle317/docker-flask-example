@@ -9,7 +9,7 @@ static/gen
 *.psd
 .DS_Store
 cffi/
-logs/
+logs/*
 *.pem
 ngrok
 *.log
