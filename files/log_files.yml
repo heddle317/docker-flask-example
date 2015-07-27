@@ -1,0 +1,11 @@
+files:
+    - /var/log/supervisor.log
+    - /var/log/gunicorn/gunicorn.access.log
+    - /var/log/gunicorn/gunicorn.error.log
+    - /var/log/application.log
+    - /var/log/application.log.*
+destination:
+    host: #.papertrailapp.com
+    port: #
+    protocol: tls
+hostname: docker-example.com
