@@ -6,6 +6,8 @@ A generic python/Flask app with a Docker file
 2. Launch boot2docker
 3. Run: docker pull heddle317/docker-flask-example
 4. Run: docker run -p 8080:80 -e ENVIRONMENT='production' -d --name=flask_app heddle317/docker-flask-example
+5. Run: VBoxManage controlvm boot2docker-vm natpf1 "flask_app,tcp,127.0.0.1,8080,,8080"
+6. Go to localhost:8080 in your browser and you should see "Hello, world!"
 
 # Creating your own version
 1. Fork this repository.
@@ -20,7 +22,7 @@ A generic python/Flask app with a Docker file
 3. Create a new virtualenv with venv or mkvirtualenv
 4. Run: pip install -r ./files/requirements.txt
 5. Run: ./run.sh web.py
-6. You should be able to see your application running on localhost:7000
+6. You should be able to see your application running on localhost:7000 (that port is configured in the app/config.py file)
 
 # Testing your docker container
 1. Make a change to your Flask application and verify it works locally.
@@ -29,6 +31,8 @@ A generic python/Flask app with a Docker file
 4. Once the build is finished, go to boot2docker.
 5. Run: docker pull [dockerHubUsername]/docker-flask-example (if you changed the name of the repo, reflect that here)
 6. Run: docker run -p 8080:80 -e ENVIRONMENT='production' -d --name=flask_app [dockerHubUsername]/[repoName]
+7. Run: VBoxManage controlvm boot2docker-vm natpf1 "flask_app,tcp,127.0.0.1,8080,,8080"
+8. Go to localhost:8080 in your browser and you should see your application.
 
 # Running your docker image in AWS
 1. Make an AWS account if you don't have one.
