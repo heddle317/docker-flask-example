@@ -6,7 +6,7 @@ RUN easy_install pip
 
 # stop supervisor service as we'll run it manually
 RUN service supervisor stop
-RUN mkdir /var/log/gunicorn && mkdir /var/log/deploys && mkdir /opt/code/logs
+RUN mkdir /var/log/gunicorn
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 RUN rm /etc/nginx/sites-enabled/default
 
