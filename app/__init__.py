@@ -17,9 +17,6 @@ app.config.from_object(config)
 Compress(app)
 db = SQLAlchemy(app)
 csrf = CsrfProtect(app)
-if config.ENV == 'production':
-    from raven.contrib.flask import Sentry
-    sentry = Sentry(app)
 
 login_manager = LoginManager()
 login_manager.login_view = "login"
