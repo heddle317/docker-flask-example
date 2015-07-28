@@ -12,10 +12,6 @@ RUN rm /etc/nginx/sites-enabled/default
 
 WORKDIR /code/
 
-# Add logging conf file
-RUN wget -O ./remote_syslog.tar.gz https://github.com/papertrail/remote_syslog2/releases/download/v0.14/remote_syslog_linux_amd64.tar.gz && tar xzf ./remote_syslog.tar.gz && cp ./remote_syslog/remote_syslog /usr/bin/remote_syslog && rm ./remote_syslog.tar.gz && rm -rf ./remote_syslog/
-ADD ./files/log_files.yml /etc/log_files.yml
-
 # Add service.conf
 ADD ./files/service.conf /code/
 RUN ln -s /code/service.conf /etc/nginx/sites-enabled/
