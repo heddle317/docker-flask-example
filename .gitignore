@@ -15,4 +15,3 @@ ngrok
 *.log
 *.rdb
 *.pid
-keys/

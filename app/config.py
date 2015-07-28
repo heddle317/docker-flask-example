@@ -61,11 +61,11 @@ if ENV == 'dev':
     PORT = 7000
     APP_BASE_LINK = 'http://localhost:' + str(PORT)
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/deploy_db'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/{}'.format(os.environ.get('DB_NAME'))
     LOG_PATH = os.path.join(ROOT_PATH, 'logs')
 else:
     LOG_PATH = '/var/log'
-    APP_BASE_LINK = 'https://deploy.makemeup.co'
+    APP_BASE_LINK = 'https://baselink.com'
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = 'postgresql://{}:{}@{}:{}/{}'.format(os.environ.get('POSTGRES_ENV_POSTGRES_USER'),
                                                                    os.environ.get('POSTGRES_ENV_POSTGRES_PASSWORD'),

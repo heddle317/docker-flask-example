@@ -30,6 +30,7 @@ RUN pip install -r ./requirements.txt
 
 # Add github repo code to code file
 ADD . /code/
+RUN mkdir /code/logs
 
 # expose port(s)
 EXPOSE 80
