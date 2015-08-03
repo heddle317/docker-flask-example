@@ -58,7 +58,7 @@ ASYNC_SENTRY_DSN = os.environ.get('ASYNC_SENTRY_DSN')
 SQLALCHEMY_POOL_RECYCLE = 3600
 
 if ENV == 'dev':
-    PORT = 7000
+    PORT = 7010
     APP_BASE_LINK = 'http://localhost:' + str(PORT)
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = 'postgresql://localhost/{}'.format(os.environ.get('DB_NAME'))

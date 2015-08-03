@@ -30,4 +30,5 @@ app.logger.addHandler(handler)
 app.logger.setLevel(logging.DEBUG)
 
 
+from app import views  # NOQA
 from app import assets  # NOQA
