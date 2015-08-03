@@ -21,8 +21,9 @@ A generic python/Flask app with a Docker file
 2. If your laptop is not setup for python, follow these instructions (http://newcoder.io/pyladiessf/)
 3. Create a new virtualenv with venv or mkvirtualenv
 4. Run: pip install -r ./files/requirements.txt
-5. Run: ./run.sh web.py
-6. You should be able to see your application running on localhost:7000 (that port is configured in the app/config.py file)
+5. Create a keys.sh file with your sensitive information (e.g. export AWS_SECRET_ACCESS_KEY='12312kj;kjaas')
+6. Run: ./run.sh web.py
+7. You should be able to see your application running on localhost:7000 (that port is configured in the app/config.py file)
 
 # Testing your docker container
 1. Make a change to your Flask application and verify it works locally.
