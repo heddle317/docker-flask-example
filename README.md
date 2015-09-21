@@ -2,8 +2,8 @@
 A generic python/Flask app with a Docker file
 
 # Getting started with Docker
-1. Install Boot2Docker https://docs.docker.com/mac/started/
-2. Launch boot2docker
+1. Install DockerToolbox https://www.docker.com/toolbox
+2. 
 3. Run: docker pull heddle317/docker-flask-example
 4. Run: docker run -p 8080:80 -e ENVIRONMENT='production' -d --name=flask_app heddle317/docker-flask-example
 5. Run: VBoxManage controlvm boot2docker-vm natpf1 "flask_app,tcp,127.0.0.1,8080,,8080"
