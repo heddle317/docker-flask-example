@@ -8,7 +8,7 @@ A generic python/Flask app with a Docker file
 4. Click "Docker Quickstart Terminal"
 5. Run: docker pull heddle317/docker-flask-example
 6. Run: docker run -p 8080:80 -e ENVIRONMENT='production' -d --name=flask_app heddle317/docker-flask-example
-7. Run: VBoxManage controlvm boot2docker-vm natpf1 "flask_app,tcp,127.0.0.1,8080,,8080"
+7. Run: VBoxManage controlvm default natpf1 "flask_app,tcp,127.0.0.1,8080,,8080"
 8. Go to localhost:8080 in your browser and you should see "Hello, world!"
 
 # Creating your own version of this repo
