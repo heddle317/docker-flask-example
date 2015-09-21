@@ -17,6 +17,7 @@ A generic python/Flask app with a Docker file
 3. Click the "Create" dropdown in the far top right corner (not the "Create Repository+" button)
 4. Select "Create Automated Build"
 5. Link your Github (or Bitbucket) account, select your user, select the github repo, etc.
+6. Click the "Trigger a build" button, go to the "Build Details" tab and you should see a new build for your container.
 
 # Testing your docker container when there are changes
 1. Clone your new repository down to your laptop
