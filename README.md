@@ -40,7 +40,7 @@ A generic python/Flask app with a Docker file
 8. Run: sudo service docker start
 9. Run (only necessary for private docker images): sudo docker login -e '[email]' -p '[password]' -u '[dockerHubUsername]'
 10. Run: sudo docker pull [dockerHubUsername]/[repoName]
-11. Run: sudo docker run -p 8080:80 -e ENVIRONMENT='production' -d --name=flask_app [dockerHubUsername]/[repoName]
+11. Run: sudo docker run -p 80:80 -e ENVIRONMENT='production' -d --name=flask_app [dockerHubUsername]/[repoName]
 12. Go to [instance-public-dns] to see your web app.
 
 # Setting up your python development environment (OPTIONAL)
