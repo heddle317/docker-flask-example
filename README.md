@@ -33,7 +33,7 @@ A generic python/Flask app with a Docker file
 1. Make an AWS account (if you don't have one).
 2. Create your own VPC (OPTIONAL: if you don't have one or want a new one).
 3. Create a new public subnet.
-4. Create an instance in your new public subnet. (Amazon Linux ami-e7527ed7)
+4. Create an instance in your new public subnet.
 5. Ssh to your new machine: ssh -i aws.pem ec2-user@[instance-public-dns]
 6. Run: yum update -y
 7. Run: yum install -y docker
