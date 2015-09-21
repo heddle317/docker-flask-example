@@ -43,9 +43,7 @@ A generic python/Flask app with a Docker file
 12. Run: docker run -p 8080:80 -e ENVIRONMENT='production' -d --name=flask_app [dockerHubUsername]/[repoName]
 13. Go to [instance-public-dns] to see your web app.
 
-Optional
-========================================
-# Setting up your python development environment
+# Setting up your python development environment (OPTIONAL)
 1. If your laptop is not setup for python, follow these instructions (http://newcoder.io/pyladiessf/)
 2. Create a new virtualenv with venv or mkvirtualenv
 3. Run: pip install -r ./files/requirements.txt
