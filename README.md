@@ -14,9 +14,9 @@ A generic python/Flask app with a Docker file
 # Creating your own version of this repo
 1. Fork this repository.
 2. Create an account at Dockerhub.com
-3. Create a new repository (automated build) in dockerhub
-4. Select build from Github
-5. Fill out relevant information
+3. Click the "Create" dropdown in the far top right corner (not the "Create Repository+" button)
+4. Select "Create Automated Build"
+5. Link your Github (or Bitbucket) account, select your user, select the github repo, etc.
 
 # Testing your docker container when there are changes
 1. Clone your new repository down to your laptop
